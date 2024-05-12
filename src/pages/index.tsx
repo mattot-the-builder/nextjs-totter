@@ -59,8 +59,8 @@ export default function Home() {
 
         <div className="grid gap-4">
           {
-            latestTotts.length > 0 && latestTotts.map((tott: Tott) => (
-              <Card className="w-80 md:w-96">
+            latestTotts.length > 0 && latestTotts.map((tott: Tott, index) => (
+              <Card className="w-80 md:w-96" key={index}>
                 <CardHeader>
                   <CardTitle>@{tott.username}</CardTitle>
                 </CardHeader>
